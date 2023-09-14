@@ -1,0 +1,17 @@
+section.Outer-diameter
+   .filter-main
+      .filter-price
+            p Наружный диаметр, мм
+            .range
+               .range-price
+                  .range-price__text
+                     span От
+                     span До
+                  .range-price__value 
+                       input(type="number" name='min' value='0')
+                       input(type="number" name='max' value='1000')
+               .range-slider
+                  span.range-selected(style={left: '30px'})
+               .range-input.input-empty
+                  input.min(type='range' min='0' max='1000' value='0' step='10')
+                  input.max(type='range' min='0' max='1000' value='1000' step='10')

@@ -1,0 +1,26 @@
+main.sealing  
+   .sealing__container
+      .description
+         ul.breadcrumbs
+            li Главная
+            span \ 
+            li Уплотнения
+         h2.title  Уплотнения поршня гидроцилиндров 
+         .main-content__container.row
+            .sealing-settings
+               img(src="img/gear.svg", alt="gear")
+            .sealing--main-content
+               .border
+                  include filter
+                  include outer-diameter
+                  include inner-diameter
+                  include width
+                  include brand
+                  include material
+               .apply
+                  button.btn(type="button") Применить
+                  button.btn-cancel(type="button") Сбросить
+            .main
+               include goods
+               include pagination 
+               include information

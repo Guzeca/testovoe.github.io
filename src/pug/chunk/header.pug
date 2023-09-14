@@ -1,0 +1,30 @@
+header.header 
+   div.header__border
+      div.header__container.menu-top
+         address 
+             a.address(href="#") 
+               img(src="img/map.svg", alt="map")
+               p  Подольск, Садовая 20
+         nav.header__menu-primary(aria-label='primary')
+            include ../section/navigation
+            span.hamburger
+   div.header__container
+      div.header__menu-secondary(aria-label='secondary')
+         a(href="#") 
+            img(src="img/logo.svg", alt="logo")
+         div.content
+            div.content-catalog 
+               span.content-menu
+               div.content-catalog-item
+                  p Каталог товаров
+         div.search
+            img.search-image(src="img/search.svg", alt="search")
+            input(type="text" placeholder="Поиск по сайту")
+         img(src="img/search.svg", alt="search").search-mini
+         div.additional
+            div.additional-image
+               img(src="img/phone.svg", alt="phone")
+            div.additional-image
+               img(src="img/user.svg", alt="user")
+            div.additional-image.warning
+               img(src="img/cart.svg", alt="cart")           

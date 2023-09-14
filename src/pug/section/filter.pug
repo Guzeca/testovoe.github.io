@@ -1,0 +1,20 @@
+section.filter
+   .filter-main
+      .filter-title
+         p Фильтры
+         button.btn-cancel(type='button') Сбросить
+      .filter-price
+            p Цена, р
+            .range
+               .range-price
+                  .range-price__text
+                     span От
+                     span До
+                  .range-price__value 
+                       input(type="number" name='min' value='1250')
+                       input(type="number" name='max' value='5000')
+               .range-slider
+                  span.range-selected(style={left: '70px'})
+               .range-input.input-fill 
+                  input.min(type='range' min='0' max='5000' value='1250' step='10')
+                  input.max(type='range' min='0' max='5000' value='5000' step='10')

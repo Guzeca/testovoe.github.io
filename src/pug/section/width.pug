@@ -1,0 +1,17 @@
+section.Outer-diameter
+   .filter-main
+      .filter-price
+            p Ширина, мм
+            .range
+               .range-price
+                  .range-price__text
+                     span От
+                     span До
+                  .range-price__value 
+                       input(type="number" name='min' value='0')
+                       input(type="number" name='max' value='3000')
+               .range-slider
+                  span.range-selected(style={left: '30px'})
+               .range-input.input-empty
+                  input.min(type='range' min='0' max='3000' value='0' step='10')
+                  input.max(type='range' min='0' max='3000' value='3000' step='10')
